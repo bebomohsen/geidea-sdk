@@ -1,20 +1,11 @@
 import 'dart:async';
-import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:geideapay/common/card_utils.dart';
 import 'package:geideapay/geideapay.dart';
-import 'package:geideapay/widgets/checkout/checkout_options.dart';
-
 import 'package:geideapay/widgets/checkout/flutter_credit_card.dart';
-import 'package:geideapay/widgets/checkout/credit_card_brand.dart';
-import 'package:geideapay/widgets/checkout/credit_card_form.dart';
-import 'package:geideapay/widgets/checkout/credit_card_model.dart';
-import 'package:geideapay/widgets/checkout/credit_card_widget.dart'
-    as credit_card_widget;
+
 import '../../common/credit_card_type_detector.dart';
-import '../../models/address.dart';
 
 const Map<CreditCardType, String?> CreditCardTypeIconAsset =
     <CreditCardType, String?>{
@@ -229,7 +220,7 @@ class CreditCardScreenState extends State<CreditCardScreen> {
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      primary:
+                                      backgroundColor:
                                           widget.checkoutOptions.payButtonColor,
                                     ),
                                     child: Container(
@@ -282,7 +273,7 @@ class CreditCardScreenState extends State<CreditCardScreen> {
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      primary: widget
+                                      backgroundColor: widget
                                           .checkoutOptions.cancelButtonColor,
                                     ),
                                     child: Container(
@@ -850,7 +841,7 @@ class CreditCardScreenState extends State<CreditCardScreen> {
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      primary:
+                                      backgroundColor:
                                           widget.checkoutOptions.payButtonColor,
                                     ),
                                     child: Container(
@@ -911,7 +902,7 @@ class CreditCardScreenState extends State<CreditCardScreen> {
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      primary: widget
+                                      backgroundColor: widget
                                           .checkoutOptions.cancelButtonColor,
                                     ),
                                     child: Container(
